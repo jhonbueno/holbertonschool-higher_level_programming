@@ -9,5 +9,5 @@ if __name__ == "__main__":
 
     for i in range(1, len):
         num = int(argv[i])
-        sum += num 
-    print("{:d}".format(sum))
+        sum += num
+    print("{}".format(sum))
