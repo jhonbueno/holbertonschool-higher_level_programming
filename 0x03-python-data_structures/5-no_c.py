@@ -1,5 +1,3 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    for char in my_string:
-        if char != c or char != C:
-            print("{}".format(char), end = "")
+    return my_string.translate({ord('c'): None, ord('C'): None})
