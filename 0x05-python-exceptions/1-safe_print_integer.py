@@ -7,5 +7,3 @@ def safe_print_integer(value):
     except TypeError:
         return False
     return True
-
-
