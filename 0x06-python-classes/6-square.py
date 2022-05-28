@@ -39,7 +39,7 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
 
     def area(self):
-        return self.__size ** 2
+        return self.size ** 2
 
     def my_print(self):
         if self.size == 0:
