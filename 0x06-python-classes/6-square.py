@@ -8,15 +8,10 @@ class Square:
     """Empty class"""
     __size = None
 
-    def __init__(self, size=0):
-
-        if type(size) is not int:
-            raise NameError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >= 0")
-        else:
-            self.__size = size
-
+    def __init__(self, size=0, position=(0, 0)):
+        self.size = size
+        self.position = position
+ 
     @property
     def size(self):
         return self.__size
