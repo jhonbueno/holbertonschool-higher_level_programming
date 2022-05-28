@@ -5,7 +5,12 @@
 
 
 class Square:
-    """Empty class"""
+    """
+    Square class
+    Attributes:
+        size (int) : Private instance attribute
+        position (tuple): Private instance attribute
+    """
 
     def __init__(self, size=0, position=(0, 0)):
         self.size = size
@@ -31,24 +36,19 @@ class Square:
     @position.setter
     def position(self, value):
         if ((isinstance(value, tuple)) and len(value) == 2 and
-                (value[0] >= 0 and value[1] >= 0)
-                and (isinstance(value[0], int)) and
-                (isinstance(value[1], int))):
+            (value[0] >= 0 and value[1] >= 0) and
+            (isinstance(value[0], int)) and (isinstance(value[1], int))):
             self.__position = value
         else:
             raise TypeError("position must be a tuple of 2 positive integers")
-
     """
     Public instance method that returns the current square area
     """
-
     def area(self):
         return self.size ** 2
-
     """
     Public instance method that print square with "#" with spaces
     """
-
     def my_print(self):
         if self.size == 0:
             print("")
